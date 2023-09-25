@@ -3,11 +3,11 @@
 <br>
 <h2>Os passos para criar um repositório no github</h2>
 <h3>
-    1. "git init" dentro da pasta do repositório
+    1. "git init" comando para iniciar um repositorio/faça dentro da pasta no git bash ou cmd
     <br>
-    2. "git . add" adicionar um arquivo
+    2. "git add ." "git add nome-do-arquivo.formato"adicionar os arquivos
     <br>
-    3. "git commit -m 'first commit'" comitamos um arquivo
+    3. "git commit -m 'comentário para organização'" comitamos um arquivo
     <br>
     4. "git branch -M main" criar branch
     <br>
@@ -15,8 +15,7 @@
     <br>
     6. "git push -u origin main" para enviar o arquivo do nosso local para repositorio
     <br>
-
-    7. "git pull" para adicionar arquivo do repositorio para o local
+    7. "git pull" para adicionar arquivo do repositorio para o local/sincronização
     <br>
     <br>
     </h3>
@@ -38,13 +37,18 @@
     <h3>
         - trazer original lá do github antes de alterar
         1. "git checkout nome-do-arquivo.formato"
-        
+            
     </h3>
     <br>
     <h2>Ignorar arquivos (não enviar ao repositorio)</h2>
     <h3>
         1. criar o arquivo .gitignore na raiz do projeto
-        2. passe os arquivos para o .gitignore os arquivos que deseja não enviar ao github
-        
+        2. escreva o nome dos arquivos no .gitignore os arquivos que deseja não enviar ao github
     </h3>
-
+    <br>
+    <h2>Resetando arquivos da branch</h2>
+    <h3>
+        1. git reset --hard origin/main (resetar para a branch anterior, ou seja, ao último commit/push que tinha enviado ao github)
+        2. tem que tomar cuidado com este comando. talvez nem tudo queira que volte ao último commit/push
+    </h3>
+    <br>
